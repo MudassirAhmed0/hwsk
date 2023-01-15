@@ -13,6 +13,12 @@ menu.onclick = () => {
     spantwo.classList.toggle("li2ne")
     spanone.classList.toggle("l1ine")
     spanthree.classList.toggle("lin3e")
+    sidebar.classList.toggle("active")
+    document.querySelector('body').classList.toggle('overflow-hidden')
 
 
 }
+
+
+// sidebar
+

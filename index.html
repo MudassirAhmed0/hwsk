@@ -34,7 +34,9 @@ left-[50%] transform translate-x-[-50%] translate-y-[-50%]
             </div>
         </div>
         <nav class="md:bg-white py-[1vw] relative  ">
-            <div class="myContainer flex justify-between items-center">
+            <div class="myContainer flex justify-between items-center
+            z-[22] relative
+            ">
                 <div class="w-[50px] md:w-[3.5vw]">
                     <img src="./assets/images/logo/logo2.svg" alt="logo" class="w-full h-full object-cover
                 ">
@@ -75,8 +77,36 @@ left-[50%] transform translate-x-[-50%] translate-y-[-50%]
             </div>
 
         </nav>
-        <div class="sideBar">
+        <div id="sidebar" class="sideBar fixed top-0 left-0 opacity-[0] w-full  h-[100vh]
+        flex pt-[110px] backdrop-blur-[30px] backdrop-brightness-[0.7]
+        pointer-events-none transition-all duration-500
+        ">
+            <div class="myContainer z-[5]">
+                <ul class="flex flex-col gap-y-[15px]     whitespace-nowrap
+                ">
+                        <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href="" class="text-[14px] text-[#fff] font-[500]">Home </a></li>
+                        <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href="" class="text-[14px] text-[#fff] font-[500]">About Us</a></li>
+                        <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href="" class="text-[14px] text-[#fff] font-[500]">Our Services</a></li>
+                        <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href="" class="text-[14px] text-[#fff] font-[500]">Treatment Program</a></li>
+                        <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href="" class="text-[14px] text-[#fff] font-[500]">Satellite HTC</a></li>
+                        <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href="" class="text-[14px] text-[#fff] font-[500]">Patient Registry</a></li>
+                        <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href="" class="text-[14px] text-[#fff] font-[500]">Community Group</a></li>
+                        <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href="" class="text-[14px] text-[#fff] font-[500]">Publications</a></li>
+                    </ul>
+                    <div class="mt-[30px]">
+                   
+                    
+                        <a href="" class=" font-[500]  bg-red text-[16px]
+                           py-[8px] px-[30px] w-full block text-center
+                        
+                        text-white
+                        
+                        ">Donate</a>
 
+                    
+                </div>
+            </div>
+            
         </div>
     </header>
 

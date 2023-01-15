@@ -768,6 +768,10 @@ video {
   z-index: 14;
 }
 
+.z-\[22\] {
+  z-index: 22;
+}
+
 .z-\[1\] {
   z-index: 1;
 }
@@ -863,6 +867,10 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-\[2\.34375vw\] {
+  margin-top: 2.34375vw;
 }
 
 .box-border {
@@ -1570,6 +1578,10 @@ video {
        column-gap: 1.3vw;
 }
 
+.gap-y-\[15px\] {
+  row-gap: 15px;
+}
+
 .gap-x-\[50px\] {
   -moz-column-gap: 50px;
        column-gap: 50px;
@@ -1932,6 +1944,10 @@ video {
   border-bottom-width: 1px;
 }
 
+.border-b-\[1px\] {
+  border-bottom-width: 1px;
+}
+
 .border-t {
   border-top-width: 1px;
 }
@@ -1970,6 +1986,11 @@ video {
 
 .border-none {
   border-style: none;
+}
+
+.border-\[\#fff\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-\[rgba\(0\2c 0\2c 0\2c 0\.3\)\] {
@@ -2138,8 +2159,26 @@ video {
   padding-right: 30px;
 }
 
+.px-\[2\.60416666667vw\] {
+  padding-left: 2.60416666667vw;
+  padding-right: 2.60416666667vw;
+}
+
+.py-\[0\.78125vw\] {
+  padding-top: 0.78125vw;
+  padding-bottom: 0.78125vw;
+}
+
 .pb-\[40px\] {
   padding-bottom: 40px;
+}
+
+.pt-\[110px\] {
+  padding-top: 110px;
+}
+
+.pb-\[12px\] {
+  padding-bottom: 12px;
 }
 
 .pt-\[40px\] {
@@ -2220,6 +2259,10 @@ video {
 
 .text-\[12px\] {
   font-size: 12px;
+}
+
+.text-\[0\.9375vw\] {
+  font-size: 0.9375vw;
 }
 
 .font-\[700\] {
@@ -2319,6 +2362,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\#fff\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .text-\[\#282828\] {
   --tw-text-opacity: 1;
   color: rgb(40 40 40 / var(--tw-text-opacity));
@@ -2387,6 +2435,10 @@ video {
 .subpixel-antialiased {
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
+}
+
+.opacity-\[0\] {
+  opacity: 0;
 }
 
 .bg-blend-normal {
@@ -2606,8 +2658,20 @@ video {
   filter: none;
 }
 
+.backdrop-blur-\[30px\] {
+  --tw-backdrop-blur: blur(30px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
 .backdrop-blur {
   --tw-backdrop-blur: blur(8px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.backdrop-brightness-\[0\.7\] {
+  --tw-backdrop-brightness: brightness(0.7);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
@@ -2796,6 +2860,11 @@ body{
   bottom: 6px;
   position: relative;
   background: #FFFFFF !important;
+}
+
+.sideBar.active{
+  opacity: 1 !important;
+  pointer-events: initial !important;
 }
 
 .hover\:bg-red:hover {
@@ -3090,6 +3159,16 @@ body{
     padding-bottom: 0.78125vw;
   }
 
+  .md\:px-\[\] {
+    padding-left: ;
+    padding-right: ;
+  }
+
+  .md\:py-\[\] {
+    padding-top: ;
+    padding-bottom: ;
+  }
+
   .md\:pb-\[6\.25vw\] {
     padding-bottom: 6.25vw;
   }
@@ -3158,4 +3237,3 @@ body{
     }
   }
 }
-  
