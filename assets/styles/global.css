@@ -54,25 +54,40 @@
 body{
     /* font-family: "lato"; */
     font-family: "Montserrat";
+    overflow-x: hidden;
 }
 
 
 
 @layer components {
     .mainHeading {
-      @apply text-[2.70833333333vw] leading-[3.64583333333vw] tracking-[0.13020833333vw] uppercase;
+      @apply text-[22px] leading-[32px] tracking-[1px] md:text-[2.70833333333vw] md:leading-[3.64583333333vw] md:tracking-[0.13020833333vw] md:mt-[1.04166666667vw]
+      mt-[18px] uppercase text-[#FFFFFF];
     }
     .heading {
-      @apply text-[2.34375vw] leading-[2.86458333333vw]  tracking-[0.10416666666vw] uppercase;
+      @apply text-[20px] leading-[30px]  md:text-[2.34375vw] md:leading-[2.86458333333vw]  md:tracking-[0.10416666666vw] uppercase;
     }
+
+    .aboutCardHeading{
+        @apply text-[18px] leading-[25px] md:text-[2.08333333333vw] md:leading-[2.70833333333vw] tracking-[0.10416666666vw] text-[#FFFFFF] font-[700]
+        top-[50%] left-[50%] text-center z-[2] transform translate-x-[-50%] translate-y-[-50%]
+    }
+
     .paragraph {
-      @apply text-[0.9375vw] leading-[1.45833333333vw]  tracking-[0.0625vw];
+      @apply text-[14px] leading-[20px] md:text-[1.04166666667vw] md:leading-[1.5625vw]  tracking-[0.0625vw];
     }
     .myContainer{
-      @apply  w-[84vw] mx-[auto] ;
+      @apply w-[88vw] md:w-[84vw] mx-[auto] ;
     }
-    
+.tagLine{
+    @apply 
+    font-[500] md:text-[0.98958333333vw] md:leading-[1.30208333333vw]
+border-b border-red md:pb-[0.78125vw] inline-block pb-[5px] uppercase text-[14px]
+text-[#FFFFFF]
+}
   }
 
   
-  
+  .heightScroll::-webkit-scrollbar{
+display: none;
+  }

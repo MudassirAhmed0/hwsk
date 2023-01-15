@@ -1,0 +1,1 @@
+window.scrollTo(0,window.innerHeight / 100 * 70)
