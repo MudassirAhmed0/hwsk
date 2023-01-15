@@ -869,10 +869,6 @@ video {
   margin-top: 0.5rem;
 }
 
-.mt-\[2\.34375vw\] {
-  margin-top: 2.34375vw;
-}
-
 .box-border {
   box-sizing: border-box;
 }
@@ -2159,16 +2155,6 @@ video {
   padding-right: 30px;
 }
 
-.px-\[2\.60416666667vw\] {
-  padding-left: 2.60416666667vw;
-  padding-right: 2.60416666667vw;
-}
-
-.py-\[0\.78125vw\] {
-  padding-top: 0.78125vw;
-  padding-bottom: 0.78125vw;
-}
-
 .pb-\[40px\] {
   padding-bottom: 40px;
 }
@@ -2259,10 +2245,6 @@ video {
 
 .text-\[12px\] {
   font-size: 12px;
-}
-
-.text-\[0\.9375vw\] {
-  font-size: 0.9375vw;
 }
 
 .font-\[700\] {
@@ -3157,16 +3139,6 @@ body{
   .md\:py-\[0\.78125vw\] {
     padding-top: 0.78125vw;
     padding-bottom: 0.78125vw;
-  }
-
-  .md\:px-\[\] {
-    padding-left: ;
-    padding-right: ;
-  }
-
-  .md\:py-\[\] {
-    padding-top: ;
-    padding-bottom: ;
   }
 
   .md\:pb-\[6\.25vw\] {
