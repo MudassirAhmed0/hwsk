@@ -65,7 +65,7 @@ body{
       mt-[18px] uppercase text-[#FFFFFF];
     }
     .heading {
-      @apply text-[20px] leading-[30px]  md:text-[2.34375vw] md:leading-[2.86458333333vw]  md:tracking-[0.10416666666vw] uppercase;
+      @apply text-[20px] leading-[30px]  md:text-[2.34375vw] md:leading-[2.86458333333vw]  md:tracking-[0.10416666666vw] uppercase font-[500];
     }
 
     .aboutCardHeading{
