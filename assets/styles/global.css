@@ -91,3 +91,69 @@ text-[#FFFFFF]
   .heightScroll::-webkit-scrollbar{
 display: none;
   }
+
+  /* HAMBURGER  */
+
+.container {
+    width: 10%;
+    height: 12vh;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu {
+    width: 100%;
+    margin: 8px;
+    background: transparent;
+    border-radius: 5px;
+  }
+  
+  .menu div {
+    position: relative;
+  
+  }
+  
+  
+  
+  .menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #d30d2b ;
+    margin: auto;
+    margin-bottom: 4px;
+    transition: all 400ms linear;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  .li2ne {
+    opacity: 0;
+  
+  }
+  
+  
+  
+  
+  .l1ine {
+    transform: rotate(-45deg);
+    position: relative;
+    top: 7.5px;
+    background: #FFFFFF !important;
+  
+  }
+  
+  
+  
+  .lin3e {
+    transform: rotate(45deg);
+    bottom: 6px;
+    position: relative;
+    background: #FFFFFF !important;
+  
+  }
+  
