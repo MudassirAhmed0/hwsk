@@ -748,6 +748,10 @@ video {
   left: 0;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -774,6 +778,10 @@ video {
 
 .z-\[2\] {
   z-index: 2;
+}
+
+.z-\[6\] {
+  z-index: 6;
 }
 
 .float-right {
@@ -1001,8 +1009,8 @@ video {
   height: 100%;
 }
 
-.min-h-\[99vh\] {
-  min-height: 99vh;
+.min-h-\[unset\] {
+  min-height: unset;
 }
 
 .w-full {
@@ -1045,6 +1053,10 @@ video {
   width: 100%;
 }
 
+.w-0 {
+  width: 0px;
+}
+
 .max-w-\[unset\] {
   max-width: unset;
 }
@@ -1079,6 +1091,10 @@ video {
 
 .border-separate {
   border-collapse: separate;
+}
+
+.origin-right {
+  transform-origin: right;
 }
 
 .translate-x-\[-50\%\] {
@@ -2144,6 +2160,10 @@ video {
      object-fit: scale-down;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .py-\[1vw\] {
   padding-top: 1vw;
   padding-bottom: 1vw;
@@ -2725,6 +2745,10 @@ video {
   transition-duration: 800ms;
 }
 
+.duration-\[1s\] {
+  transition-duration: 1s;
+}
+
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -2860,6 +2884,11 @@ body{
 .sideBar.active{
   opacity: 1 !important;
   pointer-events: initial !important;
+}
+
+.swiper-slide{
+  width: 15vw !important;
+  height: 14vw !important;
 }
 
 .hover\:bg-red:hover {
@@ -3028,6 +3057,10 @@ body{
 
   .md\:h-\[20\.84vw\] {
     height: 20.84vw;
+  }
+
+  .md\:h-\[99vh\] {
+    height: 99vh;
   }
 
   .md\:h-\[38vw\] {

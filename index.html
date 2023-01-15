@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/styles/tailwind.css">
     <link rel="stylesheet" href="./assets/styles/aos.css">
     <link rel="stylesheet" href="./assets/styles/gallery.css">
+    <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css">
 
 </head>
 
@@ -339,9 +340,12 @@ mt-[6.25vw]
         </div>
     </section>
 
-    <section class="gallery w-full h-full bg-red relative z-[5]">
+    <section  id="galleryContainer"  class="gallery w-full h-full bg-red relative z-[5]">
+        <span id="galleryOverlay" class="bg-red top-0 transition-all duration-[1s] ease-in-out  right-0 w-full z-[6] absolute   origin-right  h-full ">
 
-        <div class="parent min-h-[99vh] ">
+        </span>
+
+        <div class="parent min-h-[unset] md:h-[99vh] ">
             <div class="div1  group  relative h-[33vh] ">
                 <a data-fslightbox href="./assets/images/home/gallery/1.jpeg" class="w-full h-full">
                     <div class="relative w-full h-full overflow-hidden">
@@ -509,36 +513,24 @@ mt-[6.25vw]
                 <h2 class="heading md:mt-[0.8vw] mt-[10px]">Supporting Hands of HWSK</h2>
             </div>
             <div>
-                <div>
-                    <img src="./assets/images/logo/supportinghands/1.jpg" alt="">
-                </div>
-                <div>
-                    <img src="./assets/images/logo/supportinghands/2.jpg" alt="">
-                </div>
-                <div>
-                    <img src="./assets/images/logo/supportinghands/3.jpg" alt="">
-                </div>
-                <div>
-                    <img src="./assets/images/logo/supportinghands/4.jpg" alt="">
-                </div>
-                <div>
-                    <img src="./assets/images/logo/supportinghands/5.jpg" alt="">
-                </div>
-                <div>
-                    <img src="./assets/images/logo/supportinghands/6.jpg" alt="">
-                </div>
-                <div>
-                    <img src="./assets/images/logo/supportinghands/7.jpg" alt="">
-                </div>
-                <div>
-                    <img src="./assets/images/logo/supportinghands/8.jpg" alt="">
-                </div>
-                <div>
-                    <img src="./assets/images/logo/supportinghands/9.jpg" alt="">
-                </div>
-                <div>
-                    <img src="./assets/images/logo/supportinghands/10.jpg" alt="">
-                </div>
+                <div class="swiper supporting">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img class="w-full h-full object-cover" src="./assets/images/logo/supportinghands/1.jpg" alt=""></div>
+                      <div class="swiper-slide"><img class="w-full h-full object-cover" src="./assets/images/logo/supportinghands/2.jpg" alt=""></div>
+                      <div class="swiper-slide"><img class="w-full h-full object-cover" src="./assets/images/logo/supportinghands/3.jpg" alt=""></div>
+                      <div class="swiper-slide"><img class="w-full h-full object-cover" src="./assets/images/logo/supportinghands/4.jpg" alt=""></div>
+                      <div class="swiper-slide"><img class="w-full h-full object-cover" src="./assets/images/logo/supportinghands/5.jpg" alt=""></div>
+                      <div class="swiper-slide"><img class="w-full h-full object-cover" src="./assets/images/logo/supportinghands/6.jpg" alt=""></div>
+                      <div class="swiper-slide"><img class="w-full h-full object-cover" src="./assets/images/logo/supportinghands/7.jpg" alt=""></div>
+                      <div class="swiper-slide"><img class="w-full h-full object-cover" src="./assets/images/logo/supportinghands/8.jpg" alt=""></div>
+                      <div class="swiper-slide"><img class="w-full h-full object-cover" src="./assets/images/logo/supportinghands/9.jpg" alt=""></div>
+                      <div class="swiper-slide"><img class="w-full h-full object-cover" src="./assets/images/logo/supportinghands/10.jpg" alt=""></div>
+                      
+                    </div>
+                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div> -->
+                  </div>
             </div>
             <div>
 
@@ -656,6 +648,8 @@ mt-[6.25vw]
     <script src="./assets/javascript/fslightbox.js"></script>
     <script src="./assets/javascript/global.js"></script>
     <script src="./assets/javascript/home.js"></script>
+    <script src="./assets/javascript/swiper-bundle.min.js"></script>
+    <script src="./assets/javascript/supportinghome.js"></script>
 </body>
 
 </html>

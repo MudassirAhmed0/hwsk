@@ -162,3 +162,9 @@ display: none;
     opacity: 1 !important;
     pointer-events: initial !important;
   }
+
+
+  .swiper-slide{
+    width: 15vw !important;
+    height: 14vw !important;
+  }
