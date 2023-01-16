@@ -55,6 +55,7 @@ body{
     /* font-family: "lato"; */
     font-family: "Montserrat";
     overflow-x: hidden;
+    color: #282828;
 }
 
 
@@ -91,6 +92,29 @@ text-[#FFFFFF]
   .heightScroll::-webkit-scrollbar{
 display: none;
   }
+
+  .headerDropdownBtn::before{
+    content: '';
+    position: absolute;
+    width: 140%;
+    left: -20;
+    height: 100%;
+    top: 80%;
+    background-color: transparent;
+  }
+  .headerDropdownBtn:hover .headerDropdown{
+  opacity: 1;
+  top: 115%;
+  pointer-events: initial;
+}
+
+.headerDropdownBtn ul li:hover a{
+  color: #d30d2b;
+}
+
+.dropdownShadow{
+   box-shadow:0 2px 4px rgba(0,0,0,0.3)
+}
 
   /* HAMBURGER  */
 
