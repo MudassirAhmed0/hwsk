@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/styles/global.css">
+    <style>
+        #myChart{
+            width: 85% !important;
+            height: 100vh;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <canvas id="myPatientchart"></canvas>
+      </div>
+    <div>
+        <canvas id="mychart"></canvas>
+      </div>
+    <div>
+        <canvas id="bleeding"></canvas>
+      </div>
+ 
+
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<script>
+    const bleeding = document.getElementById("bleeding");
+const bleedinglabels =  ['as', 'df', 'gh', 'jk', 'lk', 'zx']
+const bleedingvalues = [112, 129, 33, 55, 26, 73]
+    const bleedingdata = {
+  labels: bleedinglabels,
+  datasets: [{
+    label: '# of Votes',
+    data: bleedingvalues,
+    borderWidth: 1,
+    backgroundColor: ['#CB4335', '#1F618D', '#F1C40F', '#27AE60', '#884EA0', '#D35400'],
+  }]
+};
+
+
+const bleedingConfig =  {
+  type: 'pie',
+  data: bleedingdata,
+  options: {
+    plugins: {
+      legend: {
+        // onHover: handleHover,
+        // onLeave: handleLeave
+      }
+    }
+  }
+};
+
+
+    new Chart(bleeding,bleedingConfig)
+
+</script>
+
+      <script>
+        const mychart = document.getElementById("mychart");
+
+        const myLabels= ['chutya','bsdk','bhrwa','gando']
+        const myValues1= [5,-10,15,-20]
+        const myValues2= [-5,10,-15,20]
+        const myData = {
+  labels: myLabels,
+  datasets: [
+    {
+      label: 'Dataset 1',
+      data: myValues1,
+      borderColor: "green",
+      backgroundColor: "green",
+      fill: true
+    },
+    {
+      label: 'Dataset 2',
+      data: myValues2,
+    //   borderColor: Utils.CHART_COLORS.blue,
+    //   backgroundColor: Utils.transparentize(Utils.CHART_COLORS.blue),
+      fill: true
+    }
+  ]
+};
+   const myConfig ={
+  type: 'line',
+  data: myData,
+  options: {
+    plugins: {
+      filler: {
+        propagate: false,
+      },
+      title: {
+        display: true,
+        text: (ctx) => 'drawTime: ' + ctx.chart.options.plugins.filler.drawTime
+      }
+    },
+    pointBackgroundColor: '#fff',
+    radius: 10,
+    interaction: {
+      intersect: false,
+    }
+  },
+};
+        new Chart(mychart , myConfig)
+      </script>
+
+
+
+      <script>
+        const patient = document.getElementById("myPatientchart");
+        const patientData = {
+  labels: ['Red', 'Orange', 'Yellow', 'Green', 'Blue'],
+  datasets: [
+    {
+      label: 'Dataset 1',
+      data: [10,15,20,30,45]
+    //   backgroundColor:[],
+    }
+  ]
+};
+        const patientConfig= {
+  type: 'doughnut',
+  data: patientData,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top',
+      },
+      title: {
+        display: true,
+        text: 'Chart.js Doughnut Chart'
+      }
+    }
+  },
+};
+
+
+        new Chart(patient,patientConfig)
+
+      </script>
+
+
+     <script>
+        const ctx = document.getElementById('myChart');
+        const data = {
+  labels: ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5', 'Day 6'],
+  datasets: [
+    {
+      label: 'Dataset',
+      data:  [12, 19, 3, 5, 2, 3],
+    //   borderColor: Utils.CHART_COLORS.red,
+    //   backgroundColor: Utils.transparentize(Utils.CHART_COLORS.red, 0.5),
+      pointStyle: 'circle',
+      pointRadius: 10,
+      pointHoverRadius: 15
+    }
+  ]
+};
+
+        new Chart(ctx, {
+            type: 'line',
+  data: data,
+  options: {
+    responsive: true,
+    plugins: {
+      title: {
+        display: true,
+        text: (ctx) => 'Point Style: ' + ctx.chart.data.datasets[0].pointStyle,
+      }
+    }
+  },
+options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+     
+       
+
+
+      
+const ctd = document.getElementById('mychart');
+const labels =["labels1", "labels2", "labels3", "labels4", "labels5" ]
+     const values =["1", "2", "3", "4", "5" ]
+
+        const data2 = {
+  labels: labels,
+  datasets: [
+    {
+      label: 'Unfilled',
+      fill: false,
+    //   backgroundColor: Utils.CHART_COLORS.blue,
+    //   borderColor: Utils.CHART_COLORS.blue,
+      data:values,
+    }, {
+      label: 'Dashed',
+      fill: false,
+    //   backgroundColor: Utils.CHART_COLORS.green,
+    //   borderColor: Utils.CHART_COLORS.green,
+      borderDash: [5, 5],
+      data: values,
+    }, {
+      label: 'Filled',
+    //   backgroundColor: Utils.CHART_COLORS.red,
+    //   borderColor: Utils.CHART_COLORS.red,
+      data: values,
+      fill: true,
+    }
+  ]
+};
+
+
+       
+        new Chart(ctd, {
+            type: 'line',
+  data: data2,
+  options: {
+    responsive: true,
+    plugins: {
+      title: {
+        display: true,
+        text: (ctd) => 'Point Style: ' + ctd.chart.data.datasets[0].pointStyle,
+      }
+    }
+  },
+options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+          
+        });
+   
+
+        
+     </script> 
+   
+     
+
+
+</body>
+</html>
+

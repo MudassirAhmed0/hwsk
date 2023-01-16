@@ -1,7 +1,10 @@
 // HAMBURGER JS 
-
-
-var menu = document.querySelector(".menu") 
+$(function () {
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+  });
+  setTimeout(()=>{
+    var menu = document.querySelector(".menu") 
 var spanone = document.querySelector(".line-1")
 var spantwo = document.querySelector(".line-2")
 var spanthree = document.querySelector(".line-3")
@@ -18,6 +21,9 @@ menu.onclick = () => {
 
 
 }
+  },300)
+
+
 const scrollTopBtn =document.getElementById('scrollTop')
 
 window.addEventListener('scroll',()=>{
@@ -35,3 +41,4 @@ scrollTopBtn.addEventListener('click',()=>{
      
     window.scrollTo(0,0)
 })
+

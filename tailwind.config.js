@@ -1,9 +1,9 @@
 module.exports = {
-  content: ["./**/*.{html,js}"],
+  content: ["**/*.{html,js}"],
   theme: {
     extend: {
       colors:{
-        red: "#ff0016",
+        red: "#a21010",
         black:"#282828",
         gray:"#5c5c5c",
       },

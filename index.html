@@ -4,20 +4,21 @@
 
 
 <head>
+    <base href="http://127.0.0.1:5500/">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
     
-    <link rel="stylesheet" href="./assets/styles/global.css">
-    <link rel="stylesheet" href="./assets/styles/tailwind.css">
-    <link rel="stylesheet" href="./assets/styles/aos.css">
-    <link rel="stylesheet" href="./assets/styles/gallery.css">
-    <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="./assets/images/favicons/site.webmanifest">
-    <link rel="mask-icon" href="./assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="assets/styles/global.css">
+    <link rel="stylesheet" href="assets/styles/tailwind.css">
+    <link rel="stylesheet" href="assets/styles/aos.css">
+    <link rel="stylesheet" href="assets/styles/gallery.css">
+    <link rel="stylesheet" href="assets/styles/swiper-bundle.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
   
@@ -49,193 +50,16 @@
      <meta itemprop="image" content="https://hwsk.vercel.app/assets/images/logo/logo2.svg">
      <meta itemprop="name" content="HWSK"> 
      <meta itemprop="description" content="HWSK">
-  
+     
   </head>
 
 <body>
-    <header class="flex flex-col z-[14] absolute w-full">
-        <div class="bg-red h-[3.2vw] hidden md:flex justify-between items-center relative ">
-            <div class="myContainer flex justify-between items-center">
-                <a href="tel:+922136600088" class="paragraph text-white flex items-center gap-x-[0.4vw]"><img src="./assets/images/logo/phone.svg" alt="phone" class="md:w-[1.2vw]"> +92 21-36600088</a>
-                <span class="text-white font-[700] md:text-[1.5vw] text-center absolute top-[50%] 
-left-[50%] transform translate-x-[-50%] translate-y-[-50%]
-"> Hemophilia Welfare Society Karachi</span>
-                <div class="social flex  gap-x-[12px]">
-                    <a href=""><img src="./assets/images/icons/fb.svg" alt="" class="w-[30px] md:w-[2.4vw]"></a>
-                    <a href=""><img src="./assets/images/icons/twitter.svg" alt="" class="w-[30px] md:w-[2.4vw]"></a>
-                    <a href=""><img src="./assets/images/icons/insta.svg" alt="" class="w-[30px] md:w-[2.4vw]"></a>
-                </div>
-            </div>
-        </div>
-        <nav class="md:bg-white py-[1vw] relative  ">
-            <div class="myContainer flex justify-between items-center
-            z-[22] relative
-            ">
-                <a href="./" class="w-[50px] md:w-[3.5vw]">
-                    <img src="./assets/images/logo/logo2.svg" alt="logo" class="w-full h-full object-cover
-                ">
-                </a>
-
-                <ul class="hidden md:flex gap-x-[1.3vw]   absolute top-[50%]  whitespace-nowrap
-                    left-[48%] transform translate-x-[-50%] translate-y-[-50%]"> 
-                    <li class="group relative headerDropdownBtn">
-
-                        <a href="./about/index.html" class=" md:text-[0.85vw] font-[500] group-hover:text-red transition-all duration-500">About Us</a>
-                        <ul class="absolute pointer-events-none  opacity-0 headerDropdown  transition-all duration-500  top-[125%]  left-[-1.2vw] bg-white dropdownShadow">
-                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
-                                <a href="./about/background.html" class="text-[0.85vw] block transition-all duration">Background</a>
-                            </li> 
-                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
-                                <a href="./about/leadership.html" class="text-[0.85vw] block transition-all duration">Leadership</a>
-                            </li> 
-                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
-                                <a href="./about/boe.html" class="text-[0.85vw] block transition-all duration">Board Of Executive</a>
-                            </li> 
-                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
-                                <a href="./about/bod.html" class="text-[0.85vw] block transition-all duration">Board Of Director</a>
-                            </li> 
-                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
-                                <a href="./about/cl.html" class="text-[0.85vw] block transition-all duration">Community Leadership</a>
-                            </li> 
-                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
-                                <a href="./about/managment.html" class="text-[0.85vw] block transition-all duration">Management</a>
-                            </li> 
-                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
-                                <a href="./about/moc.html" class="text-[0.85vw] block transition-all duration">Message Of CEO</a>
-                            </li> 
-                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
-                                <a href="./about/mor.html" class="text-[0.85vw] block transition-all duration">Message Of Residents</a>
-                            </li> 
-                           
-                        </ul>
-                    </li>
-                    <li class="group  relative headerDropdownBtn">
-                        <a href="./services/index.html" class="group-hover:text-red transition-all duration-500 md:text-[0.85vw] font-[500]">Our Services</a>
-                        <ul class="absolute pointer-events-none  opacity-0 headerDropdown  transition-all duration-500  top-[125%]  left-[-1.2vw] bg-white dropdownShadow">
-                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
-                                <a href="./services/hematologist.html" class="text-[0.85vw] block transition-all duration">Hematologist</a>
-                            </li> 
-                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
-                                <a href="./services/physiotherapist.html" class="text-[0.85vw] block transition-all duration">Physiotherapist</a>
-                            </li> 
-                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
-                                <a href="./services/dentist.html" class="text-[0.85vw] block transition-all duration">Dentist</a>
-                            </li> 
-                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
-                                <a href="./services/gastroenterologist.html" class="text-[0.85vw] block transition-all duration">Gastroenterologist</a>
-                            </li> 
-                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
-                                <a href="./services/orthopaedic.html" class="text-[0.85vw] block transition-all duration">Orthopaedic</a>
-                            </li> 
-                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
-                                <a href="./services/phlebotomist.html" class="text-[0.85vw] block transition-all duration">Phlebotomist</a>
-                            </li> 
-                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
-                                <a href="./services/lab-technician.html" class="text-[0.85vw] block transition-all duration">Lab Technician</a>
-                            </li> 
-                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
-                                <a href="./services/nurse.html" class="text-[0.85vw] block transition-all duration">Nurse </a>
-                            </li> 
-                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
-                                <a href="./services/pharmacy.html" class="text-[0.85vw] block transition-all duration">Pharmacy</a>
-                            </li> 
-                        </ul>
-                    </li>
-                    <li class="group  relative headerDropdownBtn">
-                        <a href="./treatment-programs/index.html" class="group-hover:text-red transition-all duration-500 md:text-[0.85vw] font-[500]">Treatment Program</a>
-                        <ul class="absolute pointer-events-none  opacity-0 headerDropdown  transition-all duration-500  top-[125%]  left-[-1.2vw] bg-white dropdownShadow">
-                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
-                                <a href="./treatment-programs/on-demand.html" class="text-[0.85vw] block transition-all duration">On Demand</a>
-                            </li> 
-                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
-                                <a href="./treatment-programs/ldp.html" class="text-[0.85vw] block transition-all duration">Low Dose Prophylaxis</a>
-                            </li> 
-                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
-                                <a href="./treatment-programs/hp.html" class="text-[0.85vw] block transition-all duration">Hemblibra Prophylaxis</a>
-                            </li> 
-                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
-                                <a href="./treatment-programs/surgery.html" class="text-[0.85vw] block transition-all duration">Surgery</a>
-                            </li> 
-                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
-                                <a href="./treatment-programs/home-therapy.html" class="text-[0.85vw] block transition-all duration">Home Therapy</a>
-                            </li> 
-                        </ul>
-                    </li>
-                    <li class="group"><a href="#" class="group-hover:text-red transition-all duration-500 md:text-[0.85vw] font-[500]">Satellite HTC</a></li>
-                    <li class="group"><a href="#" class="group-hover:text-red transition-all duration-500 md:text-[0.85vw] font-[500]">Patient Registry</a></li>
-                    <li class="group"><a href="#" class="group-hover:text-red transition-all duration-500 md:text-[0.85vw] font-[500]">Community Group</a></li>
-                    <li class="group"><a href="#" class="group-hover:text-red transition-all duration-500 md:text-[0.85vw] font-[500]">Publications</a></li>
-                    <li class="group"><a href="./contact.html" class="group-hover:text-red transition-all duration-500 md:text-[0.85vw] font-[500]">Contact Us</a></li>
-                </ul>
-
-                <div class="hidden md:block">
-
-
-                    <a href="" class="md:px-[2.60416666667vw] font-[500] md:py-[0.78125vw] bg-red md:text-[0.9375vw] md:mt-[2.34375vw] mt-[30px] py-[8px] px-[30px]
-
-                        text-white
-                        
-                        ">Donate</a>
-
-
-                </div>
-                <div class="containr block md:hidden">
-                    <div class="menu" id="show-nav">
-                        <div>
-                            <span class="line-1"></span>
-                            <span class="line-2 "></span>
-                            <span class="line-3 "></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </nav>
-        <div id="sidebar" class="sideBar fixed top-0 left-0 opacity-[0] w-full  h-[100vh]
-        flex pt-[110px] backdrop-blur-[30px] backdrop-brightness-[0.7]
-        pointer-events-none transition-all duration-500
-        ">
-            <div class="myContainer z-[5]">
-                <ul class="flex flex-col gap-y-[15px]     whitespace-nowrap
-                ">
-                     
-                    <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href="./about/index.html"
-                            class="text-[14px] text-[#fff] font-[500]">About Us</a></li>
-                    <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href="./services/index.html"
-                            class="text-[14px] text-[#fff] font-[500]">Our Services</a></li>
-                    <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href="./treatment-programs/index.html"
-                            class="text-[14px] text-[#fff] font-[500]">Treatment Program</a></li>
-                    <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href="#"
-                            class="text-[14px] text-[#fff] font-[500]">Satellite HTC</a></li>
-                    <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href="#"
-                            class="text-[14px] text-[#fff] font-[500]">Patient Registry</a></li>
-                    <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href="#"
-                            class="text-[14px] text-[#fff] font-[500]">Community Group</a></li>
-                    <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href="#"
-                            class="text-[14px] text-[#fff] font-[500]">Publications</a></li>
-                    <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href="./contact.html"
-                            class="text-[14px] text-[#fff] font-[500]">Contact Us</a></li>
-                </ul>
-                <div class="mt-[30px]">
-
-
-                    <a href="" class=" font-[500]  bg-red text-[16px]
-                           py-[8px] px-[30px] w-full block text-center
-                        
-                        text-white
-                        
-                        ">Donate</a>
-
-
-                </div>
-            </div>
-
-        </div>
-    </header>
-
-    <section class="hero h-[100vh] w-[100vw] flex items-center relative">
+    <header id="header" class="flex flex-col z-[14] absolute w-full">
+        
+        </header>
+    <section class="hero h-[100vh] w-[100%] flex items-center relative">
         <div id="parallax1" class="w-full h-full  top-0 left-0 fixed pointer-events-none">
-            <video class="w-full h-full absolute top-0 left-0 object-cover " src="./assets/vedios/Untitled design.mp4"
+            <video class="w-full h-full absolute top-0 left-0 object-cover " src="assets/vedios/Untitled design.mp4"
                 muted autoplay loop playsinline></video>
             <span class="w-full h-full absolute top-0 left-0 bg-[rgba(0,0,0,0.5)]"></span>
         </div>
@@ -244,7 +68,7 @@ left-[50%] transform translate-x-[-50%] translate-y-[-50%]
 
                 <span class="w-full h-full absolute top-0 left-0 bg-[rgba(0,0,0,0.5)]"></span>
             </div>
-            <img src="./assets/images/home/counterBackground.jpg" alt="" class="w-full h-full object-cover ">
+            <img src="assets/images/home/counterBackground.jpg" alt="" class="w-full h-full object-cover ">
         </div>
 
         <div class="myContainer md:mt-[6.25vw] mt-[80px] relative ">
@@ -271,13 +95,13 @@ text-white
                 <div data-aos="fade" class="w-[unset] md:w-[24.5%] flex justify-center items-center flex-col gap-y-[1.5vw]
             hover:opacity-[0.6] transition-all duration-500 cursor-pointer
             ">
-                    <img src="./assets/images/home/1.png" alt="" class="w-[50px] md:w-[7vw] ">
+                    <img src="assets/images/home/1.png" alt="" class="w-[50px] md:w-[7vw] ">
                     <span class="text-[14px] md:text-[1.1vw] tracking-[0.12vw] font-[500] text-center 
                 whitespace-nowrap">HOW TO GET <br> REGISTRATION FOR PATIENT</span>
                 </div>
                 <div data-aos="fade" data-aos-delay="200"
                     class="w-[unset] md:w-[24.5%] flex justify-center items-center flex-col gap-y-[1.5vw]  hover:opacity-[0.6] transition-all duration-500 cursor-pointer">
-                    <img src="./assets/images/home/2.png" alt="" class="w-[50px] md:w-[7vw] ">
+                    <img src="assets/images/home/2.png" alt="" class="w-[50px] md:w-[7vw] ">
 
                     <span class="text-[14px] md:text-[1.1vw] tracking-[0.12vw] font-[500] text-center 
                 whitespace-nowrap">
@@ -285,14 +109,14 @@ text-white
                 </div>
                 <div data-aos="fade" data-aos-delay="400"
                     class="w-[unset] md:w-[24.5%] flex justify-center items-center flex-col gap-y-[1.5vw]  hover:opacity-[0.6] transition-all duration-500 cursor-pointer">
-                    <img src="./assets/images/home/3.png" alt="" class="w-[50px] md:w-[7vw] ">
+                    <img src="assets/images/home/3.png" alt="" class="w-[50px] md:w-[7vw] ">
 
                     <span class="text-[14px] md:text-[1.1vw] tracking-[0.12vw] font-[500] text-center 
                 whitespace-nowrap">HOW TO GET <br> TREATMENT HTC</span>
                 </div>
                 <div data-aos="fade" data-aos-delay="600"
                     class="w-[unset] md:w-[24.5%] flex justify-center items-center flex-col gap-y-[1.5vw]  hover:opacity-[0.6] transition-all duration-500 cursor-pointer">
-                    <img src="./assets/images/home/4.png" alt="" class="w-[50px] md:w-[7vw] ">
+                    <img src="assets/images/home/4.png" alt="" class="w-[50px] md:w-[7vw] ">
 
                     <span class="text-[14px] md:text-[1.1vw] tracking-[0.12vw] font-[500] text-center 
                 whitespace-nowrap">
@@ -325,7 +149,7 @@ mt-[6.25vw]
                     </p>
                 </div>
                 <div class="md:w-[50%] w-[unset] md:h-[46vw]  " data-aos="fade-left">
-                    <img src="./assets/images/home/carouselImg.jpeg" alt="" class="w-full h-full
+                    <img src="assets/images/home/carouselImg.jpeg" alt="" class="w-full h-full
         object-cover
         ">
                 </div>
@@ -338,14 +162,14 @@ mt-[6.25vw]
         <div class="myContainer z-[1] relative">
             <div class="flex justify-between md:gap-x-[33.8125vw] gap-y-[35px] flex-wrap">
                 <div data-aos="fade" class="flex flex-col items-center gap-y-[0.625vw] md:w-[5.26041666667vw] w-[45%]">
-                    <img src="./assets/images/home/bleeding.svg" alt="" class="md:w-[7.8125vw] w-[75px]">
+                    <img src="assets/images/home/bleeding.svg" alt="" class="md:w-[7.8125vw] w-[75px]">
                     <span class="text-[14px] text-white md:text-[1.1vw] md:mt-[0.8vw] tracking-[0.12vw] font-[500] text-center 
             whitespace-nowrap">BLEEDING EPISODE</span>
                     <span class="text-[16px] text-white md:text-[2.2vw] tracking-[0.12vw] font-[700] text-center 
             whitespace-nowrap"><span class="count">10640</span></span>
                 </div>
                 <div data-aos="fade" data-aos-delay="200" class="flex flex-col items-center gap-y-[0.625vw] md:w-[5.26041666667vw] w-[45%]">
-                    <img src="./assets/images/home/treatedPatients.svg" alt="" class="md:w-[7.8125vw] w-[75px]">
+                    <img src="assets/images/home/treatedPatients.svg" alt="" class="md:w-[7.8125vw] w-[75px]">
                     <span class="text-[14px] text-white md:text-[1.1vw] md:mt-[0.8vw] tracking-[0.12vw] font-[500] text-center 
             whitespace-nowrap">TREATED PATIENTS</span>
                     <span class="text-[16px] text-white md:text-[2.2vw] tracking-[0.12vw] font-[700] text-center 
@@ -353,7 +177,7 @@ mt-[6.25vw]
 
                 </div>
                 <div data-aos="fade" data-aos-delay="400" class="flex flex-col items-center gap-y-[0.625vw] md:w-[5.26041666667vw] w-[45%]">
-                    <img src="./assets/images/home/bag.svg" alt="" class="md:w-[7.8125vw] w-[75px]">
+                    <img src="assets/images/home/bag.svg" alt="" class="md:w-[7.8125vw] w-[75px]">
                     <span class="text-[14px] text-white md:text-[1.1vw] md:mt-[0.8vw] tracking-[0.12vw] font-[500] text-center 
             whitespace-nowrap">PLASMA BAGS</span>
                     <span class="text-[16px] text-white md:text-[2.2vw] tracking-[0.12vw] font-[700] text-center 
@@ -364,7 +188,7 @@ mt-[6.25vw]
                 <div data-aos="fade"  class="flex flex-col items-center gap-y-[0.625vw] md:w-[5.26041666667vw] w-[45%]
         ml-[auto]
         ">
-                    <img src="./assets/images/home/injections.svg" alt="" class="md:w-[7.8125vw] w-[75px]">
+                    <img src="assets/images/home/injections.svg" alt="" class="md:w-[7.8125vw] w-[75px]">
                     <span class="text-[14px] text-white md:text-[1.1vw] md:mt-[0.8vw] tracking-[0.12vw] font-[500] text-center 
             whitespace-nowrap"> <span class="hidden md:inline">ANTI</span> HEMOPHILIA INJECTIONS</span>
                     <span class="text-[16px] text-white md:text-[2.2vw] tracking-[0.12vw] font-[700] text-center 
@@ -373,7 +197,7 @@ mt-[6.25vw]
                 <div data-aos="fade" data-aos-delay="200" class="flex flex-col items-center gap-y-[0.625vw] md:w-[5.26041666667vw] w-[45%]
         md:mr-[auto] mx-[auto]
         ">
-                    <img src="./assets/images/home/patients.svg" alt="" class="md:w-[7.8125vw] w-[75px]">
+                    <img src="assets/images/home/patients.svg" alt="" class="md:w-[7.8125vw] w-[75px]">
                     <span class="text-[14px] text-white md:text-[1.1vw] md:mt-[0.8vw] tracking-[0.12vw] font-[500] text-center 
             whitespace-nowrap">UPDATED PATIENTS</span>
                     <span class="text-[16px] text-white md:text-[2.2vw] tracking-[0.12vw] font-[700] text-center 
@@ -395,7 +219,7 @@ mt-[6.25vw]
             </div>
             <div class="flex justify-between mt-[25px] md:mt-[2.5vw] md:flex-row flex-col gap-y-[30px]">
                 <div class="md:w-[32%] w-full" data-aos="fade">
-                    <img src="./assets/images/home/news/news1.jpeg" alt=""
+                    <img src="assets/images/news/news1.jpeg" alt=""
                         class="h-[220px] md:h-[20.84vw] object-cover w-full">
                     <h5
                         class="text-[22px] mt-[20px] md:text-[1.97916666667vw] md:mt-[1.5vw] leading-[32px] md:leading-[2.3vw]">
@@ -406,14 +230,14 @@ mt-[6.25vw]
                     <a href="" class="flex text-[12px] md:text-[0.95vw] gap-x-[6px] md:gap-x-[0.4vw] text-red group
         items-center
         ">Read More
-                        <img src="./assets/images/home/news/chevron.svg" alt="" class="w-[14px] md:w-[1.2vw]
+                        <img src="assets/images/news/chevron.svg" alt="" class="w-[14px] md:w-[1.2vw]
             group-hover:translate-x-[0.5vw] transform duration-500 transition-all
             ">
                     </a>
 
                 </div>
                 <div class="md:w-[32%] w-full" data-aos="fade" data-aos-delay="200">
-                    <img src="./assets/images/home/news/news2.jpeg" alt=""
+                    <img src="assets/images/news/news2.jpeg" alt=""
                         class="h-[220px] md:h-[20.84vw] object-cover w-full" />
                     <h5
                         class="text-[22px] mt-[20px] md:text-[1.97916666667vw] md:mt-[1.5vw] leading-[32px] md:leading-[2.3vw]">
@@ -424,14 +248,14 @@ mt-[6.25vw]
                     <a href="" class="flex text-[12px] md:text-[0.95vw] gap-x-[6px] md:gap-x-[0.4vw] text-red group
         items-center
         ">Read More
-                        <img src="./assets/images/home/news/chevron.svg" alt="" class="w-[14px] md:w-[1.2vw]
+                        <img src="assets/images/news/chevron.svg" alt="" class="w-[14px] md:w-[1.2vw]
             group-hover:translate-x-[0.5vw] transform duration-500 transition-all
             ">
                     </a>
 
                 </div>
                 <div class="md:w-[32%] w-full" data-aos="fade" data-aos-delay="400">
-                    <img src="./assets/images/home/news/news3.jpeg" alt=""
+                    <img src="assets/images/news/news3.jpeg" alt=""
                         class="h-[220px] md:h-[20.84vw] object-cover w-full" />
                     <h5
                         class="text-[22px] mt-[20px] md:text-[1.97916666667vw] md:mt-[1.5vw] leading-[32px] md:leading-[2.3vw]">
@@ -442,7 +266,7 @@ mt-[6.25vw]
                     <a href="" class="flex text-[12px] md:text-[0.95vw] gap-x-[6px] md:gap-x-[0.4vw] text-red group
         items-center
         ">Read More
-                        <img src="./assets/images/home/news/chevron.svg" alt="" class="w-[14px] md:w-[1.2vw]
+                        <img src="assets/images/news/chevron.svg" alt="" class="w-[14px] md:w-[1.2vw]
             group-hover:translate-x-[0.5vw] transform duration-500 transition-all
             ">
                     </a>
@@ -460,105 +284,105 @@ mt-[6.25vw]
 
         <div class="parent min-h-[unset] md:h-[99vh] ">
             <div class="div1  group  relative h-[33vh] ">
-                <a data-fslightbox href="./assets/images/home/gallery/1.jpeg" class="w-full h-full">
+                <a data-fslightbox href="assets/images/gallery/1.jpeg" class="w-full h-full">
                     <div class="relative w-full h-full overflow-hidden">
                         <span class="w-full h-full absolute top-0 left-0 bg-[rgba(0,0,0,0.2)] 
              z-[2]
              group-hover:bg-[rgba(0,0,0,0.0)] transition-all duration-500"></span>
-                        <img src="./assets/images/home/gallery/1.jpeg" alt="Photo Gallery"
+                        <img src="assets/images/gallery/1.jpeg" alt="Photo Gallery"
                             class="w-full h-full object-cover transition-all duration-500 transform group-hover:scale-[1.1]" />
                     </div>
 
                 </a>
 
             </div>
-            <div class="div2  group  h-[66vh]"> <a data-fslightbox href="./assets/images/home/gallery/10.jpeg"
+            <div class="div2  group  h-[66vh]"> <a data-fslightbox href="assets/images/gallery/10.jpeg"
                     class="w-full h-full">
                     <div class="relative w-full h-full overflow-hidden">
                         <span class="w-full h-full absolute top-0 left-0 bg-[rgba(0,0,0,0.2)] 
              z-[2]
              group-hover:bg-[rgba(0,0,0,0.0)] transition-all duration-500"></span>
-                        <img src="./assets/images/home/gallery/10.jpeg" alt="Photo Gallery"
+                        <img src="assets/images/gallery/10.jpeg" alt="Photo Gallery"
                             class="w-full h-full object-cover transition-all duration-500 transform group-hover:scale-[1.1]" />
                     </div>
                 </a> </div>
-            <div class="div3  group  h-[33vh]"> <a data-fslightbox href="./assets/images/home/gallery/13.jpeg"
+            <div class="div3  group  h-[33vh]"> <a data-fslightbox href="assets/images/gallery/13.jpeg"
                     class="w-full h-full">
                     <div class="relative w-full h-full overflow-hidden">
                         <span class="w-full h-full absolute top-0 left-0 bg-[rgba(0,0,0,0.2)] 
              z-[2]
              group-hover:bg-[rgba(0,0,0,0.0)] transition-all duration-500"></span>
-                        <img src="./assets/images/home/gallery/13.jpeg" alt="Photo Gallery"
+                        <img src="assets/images/gallery/13.jpeg" alt="Photo Gallery"
                             class="w-full h-full object-cover transition-all duration-500 transform group-hover:scale-[1.1]" />
                     </div>
                 </a> </div>
-            <div class="div4  group  h-[33vh]"> <a data-fslightbox href="./assets/images/home/gallery/18.jpeg"
+            <div class="div4  group  h-[33vh]"> <a data-fslightbox href="assets/images/gallery/18.jpeg"
                     class="w-full h-full">
                     <div class="relative w-full h-full overflow-hidden">
                         <span class="w-full h-full absolute top-0 left-0 bg-[rgba(0,0,0,0.2)] 
              z-[2]
              group-hover:bg-[rgba(0,0,0,0.0)] transition-all duration-500"></span>
-                        <img src="./assets/images/home/gallery/18.jpeg" alt="Photo Gallery"
+                        <img src="assets/images/gallery/18.jpeg" alt="Photo Gallery"
                             class="w-full h-full object-cover transition-all duration-500 transform group-hover:scale-[1.1]" />
                     </div>
                 </a> </div>
-            <div class="div5  group  h-[66vh]"> <a data-fslightbox href="./assets/images/home/gallery/4.jpeg"
+            <div class="div5  group  h-[66vh]"> <a data-fslightbox href="assets/images/gallery/4.jpeg"
                     class="w-full h-full">
                     <div class="relative w-full h-full overflow-hidden">
                         <span class="w-full h-full absolute top-0 left-0 bg-[rgba(0,0,0,0.2)] 
              z-[2]
              group-hover:bg-[rgba(0,0,0,0.0)] transition-all duration-500"></span>
-                        <img src="./assets/images/home/gallery/4.jpeg" alt="Photo Gallery"
+                        <img src="assets/images/gallery/4.jpeg" alt="Photo Gallery"
                             class="w-full h-full object-cover transition-all duration-500 transform group-hover:scale-[1.1]" />
                     </div>
                 </a> </div>
-            <div class="div6  group  h-[33vh]"> <a data-fslightbox href="./assets/images/home/gallery/14.jpeg"
+            <div class="div6  group  h-[33vh]"> <a data-fslightbox href="assets/images/gallery/14.jpeg"
                     class="w-full h-full">
                     <div class="relative w-full h-full overflow-hidden">
                         <span class="w-full h-full absolute top-0 left-0 bg-[rgba(0,0,0,0.2)] 
              z-[2]
              group-hover:bg-[rgba(0,0,0,0.0)] transition-all duration-500"></span>
-                        <img src="./assets/images/home/gallery/14.jpeg" alt="Photo Gallery"
+                        <img src="assets/images/gallery/14.jpeg" alt="Photo Gallery"
                             class="w-full h-full object-cover transition-all duration-500 transform group-hover:scale-[1.1]" />
                     </div>
                 </a> </div>
-            <div class="div7  group  h-[33vh]"> <a data-fslightbox href="./assets/images/home/gallery/6.jpeg"
+            <div class="div7  group  h-[33vh]"> <a data-fslightbox href="assets/images/gallery/6.jpeg"
                     class="w-full h-full">
                     <div class="relative w-full h-full overflow-hidden">
                         <span class="w-full h-full absolute top-0 left-0 bg-[rgba(0,0,0,0.2)] 
              z-[2]
              group-hover:bg-[rgba(0,0,0,0.0)] transition-all duration-500"></span>
-                        <img src="./assets/images/home/gallery/6.jpeg" alt="Photo Gallery"
+                        <img src="assets/images/gallery/6.jpeg" alt="Photo Gallery"
                             class="w-full h-full object-cover transition-all duration-500 transform group-hover:scale-[1.1]" />
                     </div>
                 </a> </div>
-            <div class="div8  group  h-[33vh]"> <a data-fslightbox href="./assets/images/home/gallery/7.jpeg"
+            <div class="div8  group  h-[33vh]"> <a data-fslightbox href="assets/images/gallery/7.jpeg"
                     class="w-full h-full">
                     <div class="relative w-full h-full overflow-hidden">
                         <span class="w-full h-full absolute top-0 left-0 bg-[rgba(0,0,0,0.2)] 
              z-[2]
              group-hover:bg-[rgba(0,0,0,0.0)] transition-all duration-500"></span>
-                        <img src="./assets/images/home/gallery/7.jpeg" alt="Photo Gallery"
+                        <img src="assets/images/gallery/7.jpeg" alt="Photo Gallery"
                             class="w-full h-full object-cover transition-all duration-500 transform group-hover:scale-[1.1]" />
                     </div>
                 </a> </div>
-            <div class="div9  group  h-[33vh]"> <a data-fslightbox href="./assets/images/home/gallery/8.jpeg"
+            <div class="div9  group  h-[33vh]"> <a data-fslightbox href="assets/images/gallery/8.jpeg"
                     class="w-full h-full">
                     <div class="relative w-full h-full overflow-hidden">
                         <span class="w-full h-full absolute top-0 left-0 bg-[rgba(0,0,0,0.2)] 
              z-[2]
              group-hover:bg-[rgba(0,0,0,0.0)] transition-all duration-500"></span>
-                        <img src="./assets/images/home/gallery/8.jpeg" alt="Photo Gallery"
+                        <img src="assets/images/gallery/8.jpeg" alt="Photo Gallery"
                             class="w-full h-full object-cover transition-all duration-500 transform group-hover:scale-[1.1]" />
                     </div>
                 </a> </div>
-            <div class="div10 group   h-[33vh]"> <a data-fslightbox href="./assets/images/home/gallery/25.jpeg"
+            <div class="div10 group   h-[33vh]"> <a data-fslightbox href="assets/images/gallery/25.jpeg"
                     class="w-full h-full">
                     <div class="relative w-full h-full overflow-hidden ">
                         <span class="w-full h-full absolute top-0 left-0 bg-[rgba(0,0,0,0.2)] 
              z-[2]
              group-hover:bg-[rgba(0,0,0,0.0)] transition-all duration-500"></span>
-                        <img src="./assets/images/home/gallery/25.jpeg" alt="Photo Gallery"
+                        <img src="assets/images/gallery/25.jpeg" alt="Photo Gallery"
                             class="w-full h-full object-cover transition-all duration-500 transform group-hover:scale-[1.1]" />
                     </div>
                 </a></div>
@@ -574,8 +398,8 @@ mt-[6.25vw]
                 <h2 class="heading md:mt-[0.8vw] mt-[10px]" data-aos="fade-down">Services of HWSK</h2>
             </div>
             <div class="flex justify-between mt-[25px] md:mt-[2.5vw] md:flex-row flex-col gap-y-[30px] text-center">
-                <a href="./services/hematologist.html" class="md:w-[32%] w-full cursor-pointer" data-aos="fade">
-                    <img src="./assets/images/services/hematologist.jpg" alt="hematologist"
+                <a href="services/hematologist.html" class="md:w-[32%] w-full cursor-pointer" data-aos="fade">
+                    <img src="assets/images/services/hematologist.jpg" alt="hematologist"
                         class="h-[220px] md:h-[20.84vw] object-cover w-full">
                     <h5
                         class="text-[22px] mt-[20px] md:text-[1.97916666667vw] md:mt-[1.5vw] leading-[32px] md:leading-[2.3vw]">
@@ -584,8 +408,8 @@ mt-[6.25vw]
 
 
                 </a>
-                <a href="./services/physiotherapist.html" class="md:w-[32%] w-full cursor-pointer" data-aos="fade" data-aos-delay="200">
-                    <img src="./assets/images/services/physiotherapist.jpg" alt="physiotherapist"
+                <a href="services/physiotherapist.html" class="md:w-[32%] w-full cursor-pointer" data-aos="fade" data-aos-delay="200">
+                    <img src="assets/images/services/physiotherapist.jpg" alt="physiotherapist"
                         class="h-[220px] md:h-[20.84vw] object-cover w-full" />
                     <h5
                         class="text-[22px] mt-[20px] md:text-[1.97916666667vw] md:mt-[1.5vw] leading-[32px] md:leading-[2.3vw]">
@@ -594,8 +418,8 @@ mt-[6.25vw]
 
 
                 </a>
-                <a href="./services/dentist.html" class="md:w-[32%] w-full cursor-pointer" data-aos="fade" data-aos-delay="400">
-                    <img src="./assets/images/services/dentist.jpg" alt="dentist"
+                <a href="services/dentist.html" class="md:w-[32%] w-full cursor-pointer" data-aos="fade" data-aos-delay="400">
+                    <img src="assets/images/services/dentist.jpg" alt="dentist"
                         class="h-[220px] md:h-[20.84vw] object-cover w-full" />
                     <h5
                         class="text-[22px] mt-[20px] md:text-[1.97916666667vw] md:mt-[1.5vw] leading-[32px] md:leading-[2.3vw]">
@@ -605,7 +429,7 @@ mt-[6.25vw]
 
                 </a>
             </div>
-            <a href="./services/index.html" class="flex justify-center " data-aos="fade" data-aos-delay="400">
+            <a href="services/index.html" class="flex justify-center " data-aos="fade" data-aos-delay="400">
 
                 <button class="md:px-[2.60416666667vw] md:py-[0.78125vw] bg-white md:text-[0.9375vw] md:mt-[3.5vw] mt-[30px] py-[8px] px-[30px] hover:bg-red  hover:text-white transparent
             relative border
@@ -634,16 +458,16 @@ mt-[6.25vw]
             <div>
                 <div class="swiper supporting md:mt-[2vw] mt-[15px]">
                     <div class="swiper-wrapper">
-                      <div data-aos="fade" class="swiper-slide slide1"><img class="w-full h-full object-cover" src="./assets/images/logo/supportinghands/1.jpg" alt=""></div>
-                      <div data-aos="fade" data-aos-delay="200" class="swiper-slide slide2"><img class="w-full h-full object-cover" src="./assets/images/logo/supportinghands/2.jpg" alt=""></div>
-                      <div data-aos="fade" data-aos-delay="400" class="swiper-slide slide3"><img class="w-full h-full object-cover" src="./assets/images/logo/supportinghands/3.jpg" alt=""></div>
-                      <div data-aos="fade" data-aos-delay="600" class="swiper-slide slide4"><img class="w-full h-full object-cover" src="./assets/images/logo/supportinghands/4.jpg" alt=""></div>
-                      <div data-aos="fade" data-aos-delay="800" class="swiper-slide slide5"><img class="w-full h-full object-cover" src="./assets/images/logo/supportinghands/5.jpg" alt=""></div>
-                      <div data-aos="fade" data-aos-delay="1000" class="swiper-slide slide6"><img class="w-full h-full object-cover" src="./assets/images/logo/supportinghands/6.jpg" alt=""></div>
-                      <div data-aos="fade" data-aos-delay="" class="swiper-slide slide7"><img class="w-full h-full object-cover" src="./assets/images/logo/supportinghands/7.jpg" alt=""></div>
-                      <div data-aos="fade" class="swiper-slide slide8"><img class="w-full h-full object-cover" src="./assets/images/logo/supportinghands/8.jpg" alt=""></div>
-                      <div data-aos="fade" class="swiper-slide slide9"><img class="w-full h-full object-cover" src="./assets/images/logo/supportinghands/9.jpg" alt=""></div>
-                      <div data-aos="fade" class="swiper-slide slide10"><img class="w-full h-full object-cover" src="./assets/images/logo/supportinghands/10.jpg" alt=""></div>
+                      <div data-aos="fade" class="swiper-slide slide1"><img class="w-full h-full object-cover" src="assets/images/logo/supportinghands/1.jpg" alt=""></div>
+                      <div data-aos="fade" data-aos-delay="200" class="swiper-slide slide2"><img class="w-full h-full object-cover" src="assets/images/logo/supportinghands/2.jpg" alt=""></div>
+                      <div data-aos="fade" data-aos-delay="400" class="swiper-slide slide3"><img class="w-full h-full object-cover" src="assets/images/logo/supportinghands/3.jpg" alt=""></div>
+                      <div data-aos="fade" data-aos-delay="600" class="swiper-slide slide4"><img class="w-full h-full object-cover" src="assets/images/logo/supportinghands/4.jpg" alt=""></div>
+                      <div data-aos="fade" data-aos-delay="800" class="swiper-slide slide5"><img class="w-full h-full object-cover" src="assets/images/logo/supportinghands/5.jpg" alt=""></div>
+                      <div data-aos="fade" data-aos-delay="1000" class="swiper-slide slide6"><img class="w-full h-full object-cover" src="assets/images/logo/supportinghands/6.jpg" alt=""></div>
+                      <div data-aos="fade" data-aos-delay="" class="swiper-slide slide7"><img class="w-full h-full object-cover" src="assets/images/logo/supportinghands/7.jpg" alt=""></div>
+                      <div data-aos="fade" class="swiper-slide slide8"><img class="w-full h-full object-cover" src="assets/images/logo/supportinghands/8.jpg" alt=""></div>
+                      <div data-aos="fade" class="swiper-slide slide9"><img class="w-full h-full object-cover" src="assets/images/logo/supportinghands/9.jpg" alt=""></div>
+                      <div data-aos="fade" class="swiper-slide slide10"><img class="w-full h-full object-cover" src="assets/images/logo/supportinghands/10.jpg" alt=""></div>
                       
                     </div>
                     <!-- <div class="swiper-button-next"></div>
@@ -665,7 +489,7 @@ mt-[6.25vw]
             
             <span class="w-full h-full absolute top-0 left-0 bg-[rgba(0,0,0,0.5)]" ></span>
         </div>
-        <img src="./assets/images/home/counterBackground.jpg" alt="" class="w-full h-full object-cover ">
+        <img src="assets/images/counterBackground.jpg" alt="" class="w-full h-full object-cover ">
     </div> -->
         <div class="myContainer">
 
@@ -674,8 +498,8 @@ mt-[6.25vw]
                 <h2 class="heading md:mt-[0.8vw] mt-[10px]" data-aos="fade-down">Treatment Programs</h2>
             </div>
             <div class="flex justify-between mt-[25px] md:mt-[2.5vw] md:flex-row flex-col gap-y-[30px] text-center">
-                <a href="./treatment-programs/on-demand.html" class="md:w-[32%] w-full cursor-pointer" data-aos="fade">
-                    <img src="../assets/images/home/treatmentprogram/on-demand.jpg" alt="On Demand"
+                <a href="treatment-programs/on-demand.html" class="md:w-[32%] w-full cursor-pointer" data-aos="fade">
+                    <img src="assets/images/treatmentprogram/on-demand.jpg" alt="On Demand"
                         class="h-[220px] md:h-[20.84vw] object-cover w-full">
                     <h5
                         class="text-[22px] mt-[20px] md:text-[1.97916666667vw] md:mt-[1.5vw] leading-[32px] md:leading-[2.3vw]">
@@ -684,8 +508,8 @@ mt-[6.25vw]
 
 
                 </a>
-                <a href="./treatment-programs/ldp.html" class="md:w-[32%] w-full cursor-pointer" data-aos="fade" data-aos-delay="200">
-                    <img src="../assets/images/home/treatmentprogram/ldp.jpg" alt="low dose prophylaxis (LDP)"
+                <a href="treatment-programs/ldp.html" class="md:w-[32%] w-full cursor-pointer" data-aos="fade" data-aos-delay="200">
+                    <img src="assets/images/treatmentprogram/ldp.jpg" alt="low dose prophylaxis (LDP)"
                         class="h-[220px] md:h-[20.84vw] object-cover w-full" />
                     <h5
                         class="text-[22px] mt-[20px] md:text-[1.97916666667vw] md:mt-[1.5vw] leading-[32px] md:leading-[2.3vw]">
@@ -694,8 +518,8 @@ mt-[6.25vw]
 
 
                 </a>
-                <a href="./treatment-programs/hp.html" class="md:w-[32%] w-full cursor-pointer" data-aos="fade" data-aos-delay="400">
-                    <img src="../assets/images/home/treatmentprogram/hemblibra-prophylaxis.jpg" alt="Hemblibra prophylaxis"
+                <a href="treatment-programs/hp.html" class="md:w-[32%] w-full cursor-pointer" data-aos="fade" data-aos-delay="400">
+                    <img src="assets/images/treatmentprogram/hemblibra-prophylaxis.jpg" alt="Hemblibra prophylaxis"
                         class="h-[220px] md:h-[20.84vw] object-cover w-full" />
                     <h5
                         class="text-[22px] mt-[20px] md:text-[1.97916666667vw] md:mt-[1.5vw] leading-[32px] md:leading-[2.3vw]">
@@ -707,7 +531,7 @@ mt-[6.25vw]
             </div>
             <div  class="flex justify-center " data-aos="fade" data-aos-delay="400">
 
-                <a href="./treatment-programs/index.html" class="md:px-[2.60416666667vw] md:py-[0.78125vw] bg-white md:text-[0.9375vw] md:mt-[3.5vw] mt-[30px] py-[8px] px-[30px] hover:bg-red  hover:text-white transparent
+                <a href="treatment-programs/index.html" class="md:px-[2.60416666667vw] md:py-[0.78125vw] bg-white md:text-[0.9375vw] md:mt-[3.5vw] mt-[30px] py-[8px] px-[30px] hover:bg-red  hover:text-white transparent
             relative border
             transition-all duration-[500ms]
 
@@ -723,14 +547,14 @@ mt-[6.25vw]
 
 
     <div id="scrollTop" class="opacity-0 pointer-events-none z-[15] transition-all duration-[500ms] cursor-pointer hover:animate-bounce fixed right-[15px] bottom-[15px] lg:right-[2vw] lg:bottom-[2vw] w-[35px] lg:w-[3vw]">
-        <img src="./assets/images/icons/scrolltop.svg" alt="Arrow">
+        <img src="assets/images/icons/scrolltop.svg" alt="Arrow">
       </div>
 
 
-    <footer class="footer bg-black pt-[40px] md:pt-[6.25vw] relative  z-[5]
+    <footer id="footer" class="footer bg-black pt-[40px] md:pt-[6.25vw] relative  z-[5]
   text-white
   ">
-        <div class="myContainer ">
+        <!-- <div class="myContainer ">
             <div class="flex  justify-between pb-[40px] md:pb-[6.25vw] md:flex-row flex-col
     gap-y-[30px]
     ">
@@ -741,11 +565,11 @@ mt-[6.25vw]
                         Etiam efficitur dui vitae sem rutrum, id pretium nunc varius. Vestibulum hendrerit malesuada .
                     </p>
                     <div class="social flex md:mt-[0.8vw] mt-[15px] gap-x-[12px]">
-                        <a href=""><img src="./assets/images/icons/footer-social/fb.svg" alt=""
+                        <a href=""><img src="assets/images/icons/footer-social/fb.svg" alt=""
                                 class="w-[30px] md:w-[unset]"></a>
-                        <a href=""><img src="./assets/images/icons/footer-social/insta.svg" alt=""
+                        <a href=""><img src="assets/images/icons/footer-social/insta.svg" alt=""
                                 class="w-[30px] md:w-[unset]"></a>
-                        <a href=""><img src="./assets/images/icons/footer-social/linndin.svg" alt=""
+                        <a href=""><img src="assets/images/icons/footer-social/linndin.svg" alt=""
                                 class="w-[30px] md:w-[unset]"></a>
                     </div>
                 </div>
@@ -761,20 +585,20 @@ mt-[6.25vw]
                 <span class="text-[12px] md:text-[1vw] md:leading-[0.9vw] text-center">© 2022 Hemophilia Welfare Society
                     Karachi. All Rights Reserved</span>
             </div>
-        </div>
+        </div> -->
     </footer>
 
 
 
 
-    <script src="./assets/javascript/jquery.min.js"></script>
-    <script src="./assets/javascript/aos.js"></script>
-    <script src="./assets/javascript/aosInit.js"></script>
-    <script src="./assets/javascript/fslightbox.js"></script>
-    <script src="./assets/javascript/global.js"></script>
-    <script src="./assets/javascript/home.js"></script>
-    <script src="./assets/javascript/swiper-bundle.min.js"></script>
-    <script src="./assets/javascript/supportinghome.js"></script>
+    <script src="assets/javascript/jquery.min.js"></script>
+    <script src="assets/javascript/global.js"></script>
+    <script src="assets/javascript/aos.js"></script>
+    <script src="assets/javascript/aosInit.js"></script>
+    <script src="assets/javascript/fslightbox.js"></script>
+    <script src="assets/javascript/home.js"></script>
+    <script src="assets/javascript/swiper-bundle.min.js"></script>
+    <script src="assets/javascript/supportinghome.js"></script>
 </body>
 
 </html>
