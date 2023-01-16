@@ -71,21 +71,101 @@ left-[50%] transform translate-x-[-50%] translate-y-[-50%]
             <div class="myContainer flex justify-between items-center
             z-[22] relative
             ">
-                <div class="w-[50px] md:w-[3.5vw]">
+                <a href="./" class="w-[50px] md:w-[3.5vw]">
                     <img src="./assets/images/logo/logo2.svg" alt="logo" class="w-full h-full object-cover
                 ">
-                </div>
+                </a>
 
                 <ul class="hidden md:flex gap-x-[1.3vw]   absolute top-[50%]  whitespace-nowrap
-                    left-[48%] transform translate-x-[-50%] translate-y-[-50%]">
-                    <li><a href="" class="md:text-[0.85vw] font-[500]">Home </a></li>
-                    <li><a href="" class="md:text-[0.85vw] font-[500]">About Us</a></li>
-                    <li><a href="" class="md:text-[0.85vw] font-[500]">Our Services</a></li>
-                    <li><a href="" class="md:text-[0.85vw] font-[500]">Treatment Program</a></li>
-                    <li><a href="" class="md:text-[0.85vw] font-[500]">Satellite HTC</a></li>
-                    <li><a href="" class="md:text-[0.85vw] font-[500]">Patient Registry</a></li>
-                    <li><a href="" class="md:text-[0.85vw] font-[500]">Community Group</a></li>
-                    <li><a href="" class="md:text-[0.85vw] font-[500]">Publications</a></li>
+                    left-[48%] transform translate-x-[-50%] translate-y-[-50%]"> 
+                    <li class="group relative headerDropdownBtn">
+
+                        <a href="./about/index.html" class=" md:text-[0.85vw] font-[500] group-hover:text-red transition-all duration-500">About Us</a>
+                        <ul class="absolute pointer-events-none  opacity-0 headerDropdown  transition-all duration-500  top-[125%]  left-[-1.2vw] bg-white dropdownShadow">
+                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
+                                <a href="./about/background.html" class="text-[0.85vw] block transition-all duration">Background</a>
+                            </li> 
+                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
+                                <a href="./about/leadership.html" class="text-[0.85vw] block transition-all duration">Leadership</a>
+                            </li> 
+                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
+                                <a href="./about/boe.html" class="text-[0.85vw] block transition-all duration">Board Of Executive</a>
+                            </li> 
+                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
+                                <a href="./about/bod.html" class="text-[0.85vw] block transition-all duration">Board Of Director</a>
+                            </li> 
+                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
+                                <a href="./about/cl.html" class="text-[0.85vw] block transition-all duration">Community Leadership</a>
+                            </li> 
+                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
+                                <a href="./about/managment.html" class="text-[0.85vw] block transition-all duration">Management</a>
+                            </li> 
+                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
+                                <a href="./about/moc.html" class="text-[0.85vw] block transition-all duration">Message Of CEO</a>
+                            </li> 
+                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
+                                <a href="./about/mor.html" class="text-[0.85vw] block transition-all duration">Message Of Residents</a>
+                            </li> 
+                           
+                        </ul>
+                    </li>
+                    <li class="group  relative headerDropdownBtn">
+                        <a href="./services/index.html" class="group-hover:text-red transition-all duration-500 md:text-[0.85vw] font-[500]">Our Services</a>
+                        <ul class="absolute pointer-events-none  opacity-0 headerDropdown  transition-all duration-500  top-[125%]  left-[-1.2vw] bg-white dropdownShadow">
+                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
+                                <a href="./services/hematologist.html" class="text-[0.85vw] block transition-all duration">Hematologist</a>
+                            </li> 
+                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
+                                <a href="./services/physiotherapist.html" class="text-[0.85vw] block transition-all duration">Physiotherapist</a>
+                            </li> 
+                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
+                                <a href="./services/dentist.html" class="text-[0.85vw] block transition-all duration">Dentist</a>
+                            </li> 
+                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
+                                <a href="./services/gastroenterologist.html" class="text-[0.85vw] block transition-all duration">Gastroenterologist</a>
+                            </li> 
+                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
+                                <a href="./services/orthopaedic.html" class="text-[0.85vw] block transition-all duration">Orthopaedic</a>
+                            </li> 
+                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
+                                <a href="./services/phlebotomist.html" class="text-[0.85vw] block transition-all duration">Phlebotomist</a>
+                            </li> 
+                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
+                                <a href="./services/lab-technician.html" class="text-[0.85vw] block transition-all duration">Lab Technician</a>
+                            </li> 
+                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
+                                <a href="./services/nurse.html" class="text-[0.85vw] block transition-all duration">Nurse </a>
+                            </li> 
+                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
+                                <a href="./services/pharmacy.html" class="text-[0.85vw] block transition-all duration">Pharmacy</a>
+                            </li> 
+                        </ul>
+                    </li>
+                    <li class="group  relative headerDropdownBtn">
+                        <a href="./treatment-programs/index.html" class="group-hover:text-red transition-all duration-500 md:text-[0.85vw] font-[500]">Treatment Program</a>
+                        <ul class="absolute pointer-events-none  opacity-0 headerDropdown  transition-all duration-500  top-[125%]  left-[-1.2vw] bg-white dropdownShadow">
+                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
+                                <a href="./treatment-programs/on-demand.html" class="text-[0.85vw] block transition-all duration">On Demand</a>
+                            </li> 
+                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
+                                <a href="./treatment-programs/ldp.html" class="text-[0.85vw] block transition-all duration">Low Dose Prophylaxis</a>
+                            </li> 
+                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
+                                <a href="./treatment-programs/hp.html" class="text-[0.85vw] block transition-all duration">Hemblibra Prophylaxis</a>
+                            </li> 
+                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
+                                <a href="./treatment-programs/surgery.html" class="text-[0.85vw] block transition-all duration">Surgery</a>
+                            </li> 
+                            <li class="py-[0.7vw] px-[1.1vw] border-b border-[#f5f5f5]  ">
+                                <a href="./treatment-programs/home-therapy.html" class="text-[0.85vw] block transition-all duration">Home Therapy</a>
+                            </li> 
+                        </ul>
+                    </li>
+                    <li class="group"><a href="#" class="group-hover:text-red transition-all duration-500 md:text-[0.85vw] font-[500]">Satellite HTC</a></li>
+                    <li class="group"><a href="#" class="group-hover:text-red transition-all duration-500 md:text-[0.85vw] font-[500]">Patient Registry</a></li>
+                    <li class="group"><a href="#" class="group-hover:text-red transition-all duration-500 md:text-[0.85vw] font-[500]">Community Group</a></li>
+                    <li class="group"><a href="#" class="group-hover:text-red transition-all duration-500 md:text-[0.85vw] font-[500]">Publications</a></li>
+                    <li class="group"><a href="./contact.html" class="group-hover:text-red transition-all duration-500 md:text-[0.85vw] font-[500]">Contact Us</a></li>
                 </ul>
 
                 <div class="hidden md:block">
@@ -118,22 +198,23 @@ left-[50%] transform translate-x-[-50%] translate-y-[-50%]
             <div class="myContainer z-[5]">
                 <ul class="flex flex-col gap-y-[15px]     whitespace-nowrap
                 ">
-                    <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href=""
-                            class="text-[14px] text-[#fff] font-[500]">Home </a></li>
-                    <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href=""
+                     
+                    <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href="./about/index.html"
                             class="text-[14px] text-[#fff] font-[500]">About Us</a></li>
-                    <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href=""
+                    <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href="./services/index.html"
                             class="text-[14px] text-[#fff] font-[500]">Our Services</a></li>
-                    <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href=""
+                    <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href="./treatment-programs/index.html"
                             class="text-[14px] text-[#fff] font-[500]">Treatment Program</a></li>
-                    <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href=""
+                    <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href="#"
                             class="text-[14px] text-[#fff] font-[500]">Satellite HTC</a></li>
-                    <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href=""
+                    <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href="#"
                             class="text-[14px] text-[#fff] font-[500]">Patient Registry</a></li>
-                    <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href=""
+                    <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href="#"
                             class="text-[14px] text-[#fff] font-[500]">Community Group</a></li>
-                    <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href=""
+                    <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href="#"
                             class="text-[14px] text-[#fff] font-[500]">Publications</a></li>
+                    <li class="border-b-[1px] border-[#fff] pb-[12px]"><a href="./contact.html"
+                            class="text-[14px] text-[#fff] font-[500]">Contact Us</a></li>
                 </ul>
                 <div class="mt-[30px]">
 
@@ -539,6 +620,12 @@ mt-[6.25vw]
         </div>
     </section>
     <section class="ourSupporting bg-white py-[40px] md:py-[6.25vw] relative  z-[5]">
+        <span class="absolute w-full h-[3vw] bg-white top-[-1.5vw]">
+
+        </span>
+        <span class="absolute w-full h-[3vw] bg-white top-[-1.5vw]">
+
+        </span>
         <div class="Container w-[94vw] ml-[auto]">
             <div>
                 <span data-aos="fade-up" class="tagLine text-black">Supporting Hands</span>
@@ -634,7 +721,13 @@ mt-[6.25vw]
         </div>
     </section>
 
-    <footer class="footer bg-gray pt-[40px] md:pt-[6.25vw] relative  z-[5]
+
+    <div id="scrollTop" class="opacity-0 pointer-events-none z-[15] transition-all duration-[500ms] cursor-pointer hover:animate-bounce fixed right-[15px] bottom-[15px] lg:right-[2vw] lg:bottom-[2vw] w-[35px] lg:w-[3vw]">
+        <img src="./assets/images/icons/scrolltop.svg" alt="Arrow">
+      </div>
+
+
+    <footer class="footer bg-black pt-[40px] md:pt-[6.25vw] relative  z-[5]
   text-white
   ">
         <div class="myContainer ">
@@ -660,7 +753,7 @@ mt-[6.25vw]
                     <h6 class="text-[16px] leading-[22px] md:text-[1.6vw] md:leading-[2.5vw]">ALL CONTACTS</h6>
                     <a href="" class="paragraph mt-[12px] md:mt-[0.8vw]">www.hwsk.org.pk</a>
                     <a href="tel:+922136600088" class="paragraph mt-[8px] md:mt-[0.4vw]">Office +92 21-36600088</a>
-                    <a href="" class="paragraph mt-[8px] md:mt-[0.4vw]">info@hwsk.org.pk</a>
+                    <a href="mailto:info@hwsk.org.pk" class="paragraph mt-[8px] md:mt-[0.4vw]">info@hwsk.org.pk</a>
 
                 </div>
             </div>

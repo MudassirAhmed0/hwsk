@@ -1,1 +1,1 @@
-window.scrollTo(0,window.innerHeight / 100 * 70)
+window.scrollTo(0,window.innerHeight / 100 * 80)
