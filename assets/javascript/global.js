@@ -8,7 +8,7 @@ $(function () {
 var spanone = document.querySelector(".line-1")
 var spantwo = document.querySelector(".line-2")
 var spanthree = document.querySelector(".line-3")
-
+var sidebar = document.getElementById('sidebar')
 
 
 
