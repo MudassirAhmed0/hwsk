@@ -1,0 +1,160 @@
+
+.swiper-button-prev,.swiper-button-next{
+    background: url(../images/icons/publicationchevron.svg) no-repeat!important;
+    background-size: cover!important;
+    width: 0.729vw!important;
+    height: 0.9375vw!important;
+    top: unset!important;
+}
+
+.swiper-button-prev{
+    bottom: 0.20833333333vw !important;;
+ }
+  .swiper-button-next{
+     transform: rotate(180deg)!important;
+    bottom: 0.20833333333vw !important;;
+ 
+}
+
+.swiper-button-prev::after,.swiper-button-next::after{
+    display:none;
+}
+
+
+.majorCarousel{
+    margin-right: unset!important;
+    padding-bottom: 3.75vw!important;
+    margin-left: auto;
+ }
+ .majorCarouselWrapper{
+    display: flex;
+    overflow: hidden;
+ }
+ /* .majorCarousel::-webkit-scrollbar{
+    display: none;
+ } */
+ .majorCarouselSlide{
+    transition: .8s all!important;
+    width: 20.4583333333vw;
+    min-width: 20.4583333333vw;
+    margin-right:2.1875vw;
+    height: 29.84375vw;
+    cursor: pointer;
+ 
+ }
+ .majorCarouselSlideActive{
+    width: 33.28125vw;
+    min-width: 33.28125vw;
+    cursor: initial;
+ 
+ }
+ .majorCarouselSlideActive .majorOverlay{
+    z-index: 5;
+ 
+ }
+ .majorCarouselSlideActive .content{
+    z-index: 6;
+ }
+ 
+ .majorOverlay{
+    background: linear-gradient(0deg, rgba(5, 22, 50, 0.5), rgba(5, 22, 50, 0.5));
+ }
+ 
+ .majorCarouselSlideActive .content{
+    top: 4.89583333333vw;
+    padding-left: 3.7vw;
+    padding-right: 3.7vw;
+ }
+ .majorCarouselSlideActive .content h5{
+    max-width: 700px;
+    animation: majorFade .8s linear;
+    white-space: initial!important;
+ }
+ @keyframes majorFade {
+    0%{opacity: 0;}
+    65%{opacity: 0;}
+    100%{opacity: 1;}
+ }
+ 
+ .majorCarouselSlideActive .content p{
+    opacity: 1;
+    animation: majorFade 1s linear ; 
+ 
+ }
+ .majorCarouselSlideActive .content img{
+    opacity: 1;
+    animation: majorFade 1.2s linear ; 
+ }
+ 
+ .majorCarousel .swiper-pagination-bullets {
+    justify-content: start;
+    left: 2.6vw!important;
+ }
+ 
+ .majorCarousel .swiper-button-next{
+ 
+    right:42.2vw!important
+ }
+ .majorPagination span{
+    padding-top: 0.5vw;
+     padding-bottom: 0.5vw;
+     background: linear-gradient(180deg, transparent 0%, transparent 39% ,white 40%, white 60%, transparent 61%, transparent 100%);
+ 
+ }
+
+ 
+
+
+
+ @media(max-width:1023px){
+
+    .swiper-button-prev, .swiper-button-next{
+        width:20px!important;
+        height:20px!important;
+        background-size: contain!important;
+    }
+
+
+
+    .majorCarousel{
+       padding-bottom: 60px!important;
+    }
+    .majorCarouselSlide{
+       width: 40vw;
+       min-width: 40vw;
+       margin-right:12px;
+       height: 410px;
+    
+    }
+    .majorCarouselSlideActive{
+       width: 70vw;
+       min-width: 78vw;
+    }
+    .majorCarouselSlide h5{
+       font-size: 20px;
+       line-height: 25px;
+       margin-bottom: 15px;
+    }
+    .majorCarouselSlide .content{
+       top: 30px;
+       padding-left: 15px;
+       padding-right: 15px;
+    }
+ .majorPagination span {
+       padding-top: 6px;
+       padding-bottom: 6px;
+       background: linear-gradient(180deg, transparent 0%, transparent 44% ,black 45%, black 60%, transparent 61%, transparent 100%); 
+    }
+ .majorPagination{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: -4vw;
+ }
+ .majorCarousel .swiper-button-prev{
+    left: 14%!important;
+ }
+ .majorCarousel .swiper-button-next{
+    right: 23%!important;
+ }
+}

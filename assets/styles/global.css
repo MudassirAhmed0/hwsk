@@ -115,6 +115,9 @@ display: none;
 .dropdownShadow{
    box-shadow:0 2px 4px rgba(0,0,0,0.3)
 }
+.newsImgShadow{
+   box-shadow:0 8px 16px rgba(0,0,0,0.3)
+}
 
   /* HAMBURGER  */
 
